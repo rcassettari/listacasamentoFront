@@ -1,0 +1,54 @@
+<h3>Cadastra um novo presente</h3>
+<div class="container">
+
+    <form novalidate="novalidate" class="form-horizontal" style="width:80%" >
+        <div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputDescricao">Descrição:</label>
+
+            <div class="controls">
+                <input style="min-width: 200px;" type="text" id="inputDescricao" ng-model="presente.descricao" placeholder="Descrição"/>
+            </div>
+        </div>
+        <div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputValor">Valor:</label>
+
+            <div class="controls">
+                <input type="number" style="min-width: 200px;" type="text" id="inputValor" ng-model="presente.valor" placeholder="Valor"/>
+            </div>
+        </div>
+		<div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputLinkWeb">Link Web:</label>
+
+            <div class="controls">
+                <input style="min-width: 200px;" type="text" id="inputLinkWeb" ng-model="presente.linkWeb" placeholder="Link Web"/>
+            </div>
+        </div>
+		<div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputGanhei">Já ganhei:</label>
+
+            <div class="controls">
+                <input type="number" style="min-width: 200px;" type="text" id="inputGanhei" ng-model="presente.jaGanhei" placeholder="Já ganhei"/>
+            </div>
+        </div>
+		<div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputDataGanhei">Data em que ganhei:</label>
+
+            <div class="controls">
+                <input type="date" style="min-width: 200px;" type="text" id="inputDataGanhei" ng-model="presente.dataGanhei" placeholder="Data em que ganhei"/>
+            </div>
+        </div>
+		<div class="control-group" style="width:80%" >
+            <label class="control-label" for="inputNomeComprador">Nome do comprador:</label>
+
+            <div class="controls">
+                <input style="min-width: 200px;" type="text" id="inputNomeComprador" ng-model="presente.nomeComprador" placeholder="Nome do comprador"/>
+            </div>
+        </div>
+		<p>&nbsp;</p>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="giftcreationcontroller.createNewGift()" class="btn btn-small btn-primary">Cadastrar Presente</a>
+            </div>
+        </div>
+    </form>
+</div> 

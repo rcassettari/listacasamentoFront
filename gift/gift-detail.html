@@ -1,0 +1,54 @@
+<div class="container">
+    <h1>Editar Presente</h1>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputDescricao">Descrição:</label>
+
+            <div class="controls">
+                <input type="text" id="inputDescricao" ng-model="presente.descricao" placeholder="Descrição"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputValor">Valor:</label>
+
+            <div class="controls">
+                <input type="text" id="inputValor" ng-model="presente.valor" placeholder="Valor"/>
+            </div>
+        </div>
+		<div class="control-group">
+            <label class="control-label" for="inputLinkWeb">Link Web:</label>
+
+            <div class="controls">
+                <input type="text" id="inputLinkWeb" ng-model="presente.linkWeb" placeholder="Link Web"/>
+            </div>
+        </div>
+		<div class="control-group">
+            <label class="control-label" for="inputGanhei">Já ganhei:</label>
+
+            <div class="controls">
+                <input type="text" id="inputGanhei" ng-model="presente.jaGanhei" placeholder="Já ganhei"/>
+            </div>
+        </div>
+		<div class="control-group">
+            <label class="control-label" for="inputDataGanhei">Data em que ganhei:</label>
+
+            <div class="controls">
+                <input type="text" id="inputDataGanhei" ng-model="presente.dataGanhei" placeholder="Data em que ganhei"/>
+            </div>
+        </div>
+		<div class="control-group">
+            <label class="control-label" for="inputNomeComprador">Nome do comprador:</label>
+
+            <div class="controls">
+                <input type="text" id="inputNomeComprador" ng-model="presente.nomeComprador" placeholder="Nome do comprador"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="cancel()" class="btn btn-small">Cancelar</a>
+                <a ng-click="updateUser()" class="btn btn-small btn-primary">Atualizar Presente</a>
+            </div>
+        </div>		
+    </form>	
+</div>
